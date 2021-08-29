@@ -1,7 +1,6 @@
 #!/bin/bash
 
 my-cmds () (
-
 echo "Command    Tool"
 echo "-------    -----------"
 echo "vs         Visual Studio"
@@ -44,4 +43,8 @@ sudo "/mnt/c/Program Files (x86)/World of Warcraft/World of Warcraft Launcher.ex
 
 spotify () (
 sudo "/mnt/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe"
+)
+
+edge () (
+sudo "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 )
