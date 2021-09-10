@@ -52,6 +52,6 @@ sudo "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
 gpo () (
 git add .
-git commit -m ""$1""
+git commit -m "$1"
 git push origin $(git branch --show-current)
 )
