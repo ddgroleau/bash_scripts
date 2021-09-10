@@ -12,6 +12,7 @@ echo "edge       Microsoft Edge"
 echo "wow        World of Warcraft"
 echo "spotify    Spotify"
 echo "discord    Discord"
+echo "push<args> Git add, commit, and push to current branch."
 )
 
 vs () (
@@ -47,4 +48,10 @@ sudo "/mnt/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe"
 
 edge () (
 sudo "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+)
+
+push () (
+git add .
+git commit -m $1
+git push origin $(git branch --show-current)
 )
