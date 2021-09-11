@@ -13,6 +13,12 @@ echo "wow        World of Warcraft"
 echo "spotify    Spotify"
 echo "discord    Discord"
 echo "gpo<args>  Git add, commit, and push to current branch."
+echo "sql        Opens SQLite3"
+)
+
+sql () (
+echo "Opening SQLite3..."
+sqlite3
 )
 
 vs () (
