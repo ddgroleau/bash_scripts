@@ -14,6 +14,11 @@ echo "spotify    Spotify"
 echo "discord    Discord"
 echo "gpo<args>  Git add, commit, and push to current branch."
 echo "sql        Opens SQLite3"
+echo "db	 Dotnet Build"
+)
+
+db () (
+dotnet build
 )
 
 sql () (
