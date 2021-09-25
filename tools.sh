@@ -15,6 +15,11 @@ echo "discord    Discord"
 echo "gpo<args>  Git add, commit, and push to current branch."
 echo "sql        Opens SQLite3"
 echo "db	 Dotnet Build"
+echo "lp	 LinqPad6"
+)
+
+lp () (
+"/mnt/c/Program Files/LINQPad6/LINQPad6.exe"
 )
 
 db () (
