@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 my-cmds () (
@@ -39,7 +40,9 @@ ssms () (
 sudo "/mnt/c/Program Files (x86)/Microsoft SQL Server Management Studio 18/Common7/IDE/Ssms.exe"
 )
 
-vsc='"/mnt/c/Users/ddgro/AppData/Local/Programs/Microsoft_VS_Code/Code.exe"'
+vsc () (
+sudo "/mnt/c/Users/ddgro/AppData/Local/Programs/Microsoft VS Code/Code.exe"
+)
 
 np () (
 sudo "/mnt/c/Program Files (x86)/Notepad++/Notepad++.exe"
