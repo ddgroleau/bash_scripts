@@ -8,6 +8,7 @@ bin-release/
 .settings/
 worktools.sh
 ./worktools.sh
+./bashTools.sh
 
 # Executables
 *.swf
