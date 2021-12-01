@@ -17,6 +17,18 @@ echo "sql        Opens SQLite3"
 echo "db	 Dotnet Build"
 echo "lp	 LinqPad6"
 echo "code<arg>  VS Code to Directory(arg)"
+echo "figma      Figma"
+echo "$repo      Navigate to Repos"
+echo "src       Reload bash_profile"
+)
+
+src () (
+source ~/.bash_profile
+)
+
+figma () (
+echo "Opening Figma..."
+"/mnt/c/Users/ddgro/AppData/Local/Figma/Figma.exe"
 )
 
 repo="cd /mnt/c/users/ddgro/source/repos"
@@ -35,7 +47,7 @@ sqlite3
 )
 
 vs () (
-sudo "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/devenv.exe"
+sudo "/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe"
 )
 
 ssms () (
