@@ -17,15 +17,23 @@ echo "zoom       Zoom"
 echo "teams      Teams"
 echo "tkt<arg>   Open Ticket Directory"
 echo "email      Outlook"
-echo "xl         Velocity.xlsx File"
+echo "pw         Passwords"
 echo "mysql      MySQL Workbench"
 echo "gpo<args>  Git Add, Commit & Push to Current Branch."
 echo "lp	 LinqPad6"
 echo "wamp       WAMP"
+echo "pm	 Postman"
+echo "wkspace    Navigate to Workspace"
+)
+
+alias wkspace='cd "/c/users/groleaud/source/repos/workspaces/physical medicine"'
+
+pm () (
+/C/Users/groleaud/AppData/Local/Postman/Postman.exe
 )
 
 wamp () (
-"/c/Users/groleaud/source/repos/Workspaces/WholeHealthLiving/wampmanager.exe"
+"/c/wamp64/wampmanager.exe"
 )
 
 lp () (
@@ -90,10 +98,12 @@ tkt () (
 
     if [[ -d "$directory" ]] 
     then
-        explorer.exe `wslpath -w "$directory"`
+        cd "$directory"
+        start .
     else
         mkdir "$directory"
-        explorer.exe `wslpath -w "$directory"`
+        cd "$directory"
+	start .
     fi
 )
 
@@ -101,8 +111,11 @@ email () (
 "/c/Program Files/Microsoft Office/root/Office16/OUTLOOK.EXE"
 )
 
-xl () (
-explorer.exe "/c/users/groleaud/OneDrive - Tivity Health/Documents/dev/Velocity.xlsx"
+pw () (
+echo "KeePass Master Password:"
+echo -e "L0gan\$_run12##\n"
+echo "SSIS Packages:"
+echo -e "L0gan\$_run\n"
 )
 
 mysql () (
