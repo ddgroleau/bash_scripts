@@ -27,13 +27,13 @@ source ~/.bashrc
 
 figma () (
 echo "Opening Figma..."
-"/c/Users/ddgro/AppData/Local/Figma/Figma.exe"
+"/c/Users/ddgro/AppData/Local/Figma/Figma.exe" &> /dev/null
 )
 
 repo="cd /c/users/ddgro/source/repos"
 
 lp () (
-"/c/Program Files/LINQPad6/LINQPad6.exe"
+"/c/Program Files/LINQPad6/LINQPad6.exe" &> /dev/null
 )
 
 db () (
@@ -45,36 +45,36 @@ echo "Opening SQLite3..."
 sqlite3
 )
 vs () (
-sudo "/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe"
+sudo "/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe" &> /dev/null
 )
 
 ssms () (
-sudo "/c/Program Files (x86)/Microsoft SQL Server Management Studio 18/Common7/IDE/Ssms.exe"
+sudo "/c/Program Files (x86)/Microsoft SQL Server Management Studio 18/Common7/IDE/Ssms.exe" &> /dev/null
 )
 
 vsc () (
-"/c/Users/ddgro/AppData/Local/Programs/Microsoft VS Code/Code.exe"
+"/c/Users/ddgro/AppData/Local/Programs/Microsoft VS Code/Code.exe" &> /dev/null
 )
 
 np () (
-"/c/Program Files (x86)/Notepad++/Notepad++.exe"
+"/c/Program Files (x86)/Notepad++/Notepad++.exe" &> /dev/null
 )
 
 snip () (
-"/c/Windows/System32/SnippingTool.exe"
+"/c/Windows/System32/SnippingTool.exe" &> /dev/null
 )
 
 discord () (
-"/c/Users/ddgro/AppData/Local/Discord/Update.exe"
-"/c/Users/ddgro/AppData/Local/Discord/app-1.0.9002/Discord.exe"
+"/c/Users/ddgro/AppData/Local/Discord/Update.exe" &> /dev/null
+"/c/Users/ddgro/AppData/Local/Discord/app-1.0.9002/Discord.exe" &> /dev/null
 )
 
 spotify () (
-"/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe"
+"/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe" &> /dev/null
 )
 
 edge () (
-"/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+"/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" &> /dev/null
 )
 
 gpo () (
