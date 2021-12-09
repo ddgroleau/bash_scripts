@@ -5,7 +5,7 @@ echo "Command    Tool"
 echo "-------    -----------"
 echo "vs         Visual Studio"
 echo "ssms       SSMS"
-echo "vsc        Visual Studio Code"
+echo "code<arg>  Open Visual Studio Code to arg directory"
 echo "np         Notepad++"
 echo "snip       Snipping Tool"
 echo "edge       Microsoft Edge"
@@ -27,13 +27,14 @@ source ~/.bashrc
 
 figma () (
 echo "Opening Figma..."
-"/c/Users/ddgro/AppData/Local/Figma/Figma.exe" &> /dev/null
+"/c/Users/ddgro/AppData/Local/Figma/Figma.exe" & > /dev/null
 )
 
 repo="cd /c/users/ddgro/source/repos"
 
 lp () (
-"/c/Program Files/LINQPad6/LINQPad6.exe" &> /dev/null
+echo "Opening LinqPad6..."
+"/c/Program Files/LINQPad6/LINQPad6.exe" & > /dev/null
 )
 
 db () (
@@ -45,36 +46,36 @@ echo "Opening SQLite3..."
 sqlite3
 )
 vs () (
-sudo "/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe" &> /dev/null
+sudo "/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe" & > /dev/null
 )
 
 ssms () (
-sudo "/c/Program Files (x86)/Microsoft SQL Server Management Studio 18/Common7/IDE/Ssms.exe" &> /dev/null
+sudo "/c/Program Files (x86)/Microsoft SQL Server Management Studio 18/Common7/IDE/Ssms.exe" & > /dev/null
 )
 
 vsc () (
-"/c/Users/ddgro/AppData/Local/Programs/Microsoft VS Code/Code.exe" &> /dev/null
+"/c/Users/ddgro/AppData/Local/Programs/Microsoft VS Code/Code.exe" & > /dev/null
 )
 
 np () (
-"/c/Program Files (x86)/Notepad++/Notepad++.exe" &> /dev/null
+"/c/Program Files (x86)/Notepad++/Notepad++.exe" & > /dev/null
 )
 
 snip () (
-"/c/Windows/System32/SnippingTool.exe" &> /dev/null
+"/c/Windows/System32/SnippingTool.exe" & > /dev/null
 )
 
 discord () (
-"/c/Users/ddgro/AppData/Local/Discord/Update.exe" &> /dev/null
-"/c/Users/ddgro/AppData/Local/Discord/app-1.0.9002/Discord.exe" &> /dev/null
+"/c/Users/ddgro/AppData/Local/Discord/Update.exe" & > /dev/null
+"/c/Users/ddgro/AppData/Local/Discord/app-1.0.9002/Discord.exe" & > /dev/null
 )
 
 spotify () (
-"/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe" &> /dev/null
+"/c/Users/ddgro/AppData/Roaming/Spotify/Spotify.exe" & > /dev/null
 )
 
 edge () (
-"/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" &> /dev/null
+"/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" & > /dev/null
 )
 
 gpo () (
