@@ -25,7 +25,7 @@ echo "dd         Docker Desktop"
 
 dd () (
 echo "Starting docker desktop..."
-sudo "/mtn/c/Program Files/Docker/Docker/Docker Desktop.exe"
+sudo "/mtn/c/Program Files/Docker/Docker/Docker Desktop.exe" & > /dev/null
 )
 
 src () (
