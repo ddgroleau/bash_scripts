@@ -20,10 +20,10 @@ echo "code<arg>    VS Code to Directory(arg)"
 echo "figma        Figma"
 echo "$repo        Navigate to Repos"
 echo "src          Reload bash_profile"
-echo "docker-x     Docker Desktop"
+echo "dockerx     Docker Desktop"
 )
 
-docker-x () (
+dockerx () (
 echo "Starting docker desktop..."
 sudo "/mnt/c/Program Files/Docker/Docker/Docker Desktop.exe" & > /dev/null
 )
