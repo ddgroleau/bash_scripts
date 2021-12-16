@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## Microsoft Documentation for HTTPS support.
 
 #**-------- Windows using Linux containers --------**

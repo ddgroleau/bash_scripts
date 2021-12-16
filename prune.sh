@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 containers=$(docker container ls -aq)
 images=$(docker images -q)
 
