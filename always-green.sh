@@ -1,3 +1,4 @@
+cd ~/repos/bash_scripts
 sudo date > today.txt
 git add . &> /dev/null
 git commit -m "Updated always-green.sh" --quiet
