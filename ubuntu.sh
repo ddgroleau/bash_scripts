@@ -7,6 +7,7 @@ echo "ff         Firefox"
 echo "gpo(arg)   Git Add, Commit, Push (Commit Message)"
 echo "spotify    Spotify"
 echo "code(arg)  VS Code (Directory)"
+echo "xampp(arg) XAMPP (Start/Stop)"
 )
 
 ff () (
@@ -16,7 +17,7 @@ ff () (
 
 spotify () (
     echo -e "\nOpening Spotify...\n"
-    /bin/spotify 2>&1 &
+    /bin/spotify & > /dev/null
 )
 
 gpo () (
@@ -28,4 +29,12 @@ gpo () (
 
 src () (
     source ~/.bashrc
+)
+
+xampp () (
+   sudo /opt/lampp/lampp $1 
+)
+
+mysql () (
+    sudo /bin/mysql-workbench & > /dev/null
 )
