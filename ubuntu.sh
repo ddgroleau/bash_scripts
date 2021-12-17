@@ -35,6 +35,6 @@ xampp () (
    sudo /opt/lampp/lampp $1 
 )
 
-mysql () (
+mysqlx () (
     sudo /bin/mysql-workbench & > /dev/null
 )
