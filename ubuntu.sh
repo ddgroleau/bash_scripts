@@ -11,7 +11,7 @@ echo "code(arg)  VS Code (Directory)"
 
 ff () (
     echo -e "\nOpening Firefox...\n"
-    /bin/firefox 2>&1 &
+    firefox & > /dev/null
 )
 
 spotify () (
