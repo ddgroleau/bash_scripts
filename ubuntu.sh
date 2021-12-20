@@ -1,6 +1,6 @@
 #!/bin/bash
 
-my-cmds () (
+man-bashrc () (
 echo "Command    Tool"
 echo "-------    -----------"
 echo "ff         Firefox"
