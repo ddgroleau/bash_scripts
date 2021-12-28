@@ -1,23 +1,32 @@
 #!/bin/bash
 
-my-cmds () (
-echo "Command    Tool"
-echo "-------    -----------"
-echo "ff         Firefox"
-echo "gpo(arg)   Git Add, Commit, Push (Commit Message)"
-echo "spotify    Spotify"
-echo "code(arg)  VS Code (Directory)"
-echo "xampp(arg) XAMPP (Start/Stop)"
+man-bashrc () (
+    echo "Command           Tool"
+    echo "-------------     -----------"
+    echo "ff (-o (arg))     Firefox (open to URL arg)"
+    echo "gpo(arg)          Git Add, Commit, Push (Commit Message)"
+    echo "spotify           Spotify"
+    echo "code(arg)         VS Code (Directory)"
+    echo "xampp(arg)        XAMPP (Start/Stop)"
 )
 
 ff () (
-    echo -e "\nOpening Firefox...\n"
-    firefox & > /dev/null
+    if [ "$1"=="-o" ] && [ "$2" ] 
+    then
+        echo -e "\nOpening Firefox to page $2...\n"
+        firefox "$2" &> /dev/null &
+    elif [ "$1"=="-o" ] && [ ! "$2" ] 
+    then
+        echo -e "\nThere is an error in your -o argument. Try again.\n"
+    else
+        echo -e "\nOpening Firefox...\n"
+        firefox &> /dev/null &
+    fi
 )
 
-spotify () (
+spotifyx () (
     echo -e "\nOpening Spotify...\n"
-    /bin/spotify & > /dev/null
+    spotify &> /dev/null &
 )
 
 gpo () (
