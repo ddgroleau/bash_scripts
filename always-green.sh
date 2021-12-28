@@ -3,6 +3,7 @@
 cd ~/repos/bash_scripts
 
 sudo date > today.txt
+git pull origin master
 git add . &> /dev/null
 git commit -m "Updated always-green.sh" --quiet
 git push origin master --quiet
