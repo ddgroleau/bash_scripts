@@ -11,11 +11,11 @@ man-bashrc () (
 )
 
 ff () (
-    if [ "$1"=="-o" ] && [ "$2" ] 
+    if [[ $1=="-o" && "$2" ]] 
     then
         echo -e "\nOpening Firefox to page $2...\n"
         firefox "$2" &> /dev/null &
-    elif [ "$1"=="-o" ] && [ ! "$2" ] 
+    elif [[ -n "$1" && -z "$2" ]]
     then
         echo -e "\nThere is an error in your -o argument. Try again.\n"
     else
