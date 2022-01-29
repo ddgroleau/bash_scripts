@@ -20,6 +20,12 @@ man-bashrc () (
     echo "repo         Navigate to Repos"
     echo "src          Reload bash_profile"
     echo "dockerx      Docker Desktop"
+    echo "ff	       FireFox"
+)
+
+ff () (
+	echo "Starting Firefox..."
+	sudo "/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 )
 
 dockerx () (
