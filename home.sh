@@ -28,6 +28,11 @@ ff () (
 	sudo "/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 )
 
+ij () (
+	echo "Starting IntelliJ..."
+	sudo "/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1.1/bin/idea64.exe"
+)
+
 dockerx () (
     echo "Starting docker desktop..."
     sudo "/mnt/c/Program Files/Docker/Docker/Docker Desktop.exe" &> /dev/null &
