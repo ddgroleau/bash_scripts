@@ -30,7 +30,7 @@ ff () (
 
 ij () (
 	echo "Starting IntelliJ..."
-	sudo "/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1.1/bin/idea64.exe"
+	sudo "/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1.1/bin/idea64.exe" &> /dev/null &
 )
 
 dockerx () (
