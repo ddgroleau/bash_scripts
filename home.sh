@@ -25,7 +25,7 @@ man-bashrc () (
 
 ff () (
 	echo "Starting Firefox..."
-	sudo "/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
+	sudo "/mnt/c/Program Files/Firefox Developer Edition/firefox.exe"
 )
 
 ij () (
