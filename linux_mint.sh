@@ -28,11 +28,11 @@ alias src="source ~/.bashrc"
 
 # Rider IDE
 export PATH="/usr/bin/rider/bin":$PATH;
-alias rider="rider.sh & > /dev/null &";
+alias rider="rider.sh &> /dev/null &";
 
 #IntelliJ IDE
 export PATH="/usr/bin/intellij/bin":$PATH;
-alias intellij="idea.sh & > /dev/null &";
+alias intellij="idea.sh &> /dev/null &";
 
 #Add 'dotnet' to PATH
 export PATH="~/.dotnet":$PATH;
