@@ -9,6 +9,7 @@ man-bashrc () (
     echo "code (arg)        VS Code (Directory)"
     echo "rider             Open Rider IDE"
     echo "intellij          Open IntelliJ IDE"
+    echo "dockerx           Open Docker Desktop"
 )
 
 spotifyx () (
@@ -25,6 +26,8 @@ gpo () (
 alias ff="firefox &> /dev/null &"
 
 alias src="source ~/.bashrc"
+
+alias dockerx="systemctl --user start docker-desktop &> /dev/null &"
 
 # Rider IDE
 export PATH="/usr/bin/rider/bin":$PATH;
