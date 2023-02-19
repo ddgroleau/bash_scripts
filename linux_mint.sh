@@ -38,4 +38,4 @@ export PATH="/usr/bin/intellij/bin":$PATH;
 alias intellij="idea.sh &> /dev/null &";
 
 #Add 'dotnet' to PATH
-export PATH="~/.dotnet":$PATH;
+# export PATH="~/.dotnet":$PATH;
