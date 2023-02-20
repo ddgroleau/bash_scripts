@@ -5,7 +5,7 @@ man-bashrc () (
     echo "-------    -----------"
     echo "vs           Visual Studio"
     echo "ssms         SSMS"
-    echo "code<arg>    Open Visual Studio Code to arg directory"
+    echo "code <arg>   Open Visual Studio Code to arg directory"
     echo "np           Notepad++"
     echo "snip         Snipping Tool"
     echo "edge         Microsoft Edge"
@@ -96,7 +96,6 @@ edge () (
 
 gpo () (
     echo -e "Committing and pushing your changes to current branch...\n"
-    git add .
-    git commit -m "$1"
+    git commit -am "$1"
     git push origin $(git branch --show-current)
 )
