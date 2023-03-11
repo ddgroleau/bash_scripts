@@ -21,6 +21,7 @@ man-bashrc () (
     echo "src          Reload bash_profile"
     echo "dockerx      Docker Desktop"
     echo "ff	       FireFox"
+    echo "rider        Open Rider IDE"
 )
 
 ff () (
@@ -98,4 +99,9 @@ gpo () (
     echo -e "Committing and pushing your changes to current branch...\n"
     git commit -am "$1"
     git push origin $(git branch --show-current)
+)
+
+rider () (
+    echo "Opening Rider IDE..."
+    sudo "/mnt/c/Program Files/JetBrains/JetBrains Rider 2022.3.2/bin/rider64.exe" &> /dev/null &
 )
