@@ -15,6 +15,7 @@ man-bashrc () (
     echo "sql          Opens SQLite3"
     echo "db	       Dotnet Build"
     echo "lp	       LinqPad6"
+    echo "ij	       IntelliJ IDE"
     echo "code<arg>    VS Code to Directory(arg)"
     echo "figma        Figma"
     echo "repo         Navigate to Repos"
