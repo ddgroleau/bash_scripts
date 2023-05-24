@@ -2,7 +2,7 @@
 
 cd ~/repos/bash_scripts
 
-uuidgen > uuid.txt
+sudo uuidgen >> uuid.txt
 git pull origin master --force
 git commit -am "Updated uuid.txt" --quiet
 git push origin master --quiet --force
