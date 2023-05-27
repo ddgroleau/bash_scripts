@@ -2,7 +2,9 @@
 
 cd ~/repos/bash_scripts
 
-echo uuidgen > always-green.txt
+uuid=$(uuidgen)
+
+echo $uuid > always-green.txt
 git pull origin master --force
 git commit -am "Updated always-green.txt" --quiet
 git push origin master --quiet --force
