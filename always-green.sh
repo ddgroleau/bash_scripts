@@ -2,7 +2,7 @@
 
 cd ~/repos/bash_scripts
 
-sudo "always-green " >> always-green.txt
+echo "always-green " >> always-green.txt
 git pull origin master --force
 git commit -am "Updated always-green.txt" --quiet
 git push origin master --quiet --force
