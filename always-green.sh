@@ -2,10 +2,12 @@
 
 cd ~/repos/bash_scripts
 
-sudo date > today.txt
-git pull origin master
-git commit -am "Updated always-green.sh" --quiet
-git push origin master --quiet
+uuid=$(uuidgen)
+
+echo $uuid > always-green.txt
+git pull origin master --force
+git commit -am "Updated always-green.txt" --quiet
+git push origin master --quiet --force
 
 if [ $? -eq 0 ]
 then 
